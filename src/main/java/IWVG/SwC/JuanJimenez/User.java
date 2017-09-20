@@ -33,6 +33,10 @@ public class User {
     public String fullName() {
         return this.name + " " + this.familyName;
     }
+    
+    public String fullNameUpper() {
+        return this.name.toUpperCase() + " " + this.familyName.toUpperCase();
+    }
 
     public String initials() {
         return this.name.substring(0, 1) + ".";
