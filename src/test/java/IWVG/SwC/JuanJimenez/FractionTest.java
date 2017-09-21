@@ -7,7 +7,6 @@ import org.junit.Test;
 
 public class FractionTest {
     
-   //private Fraction fractionA;
    private Fraction fraction;
    private Fraction fraction2; 
     @Before
