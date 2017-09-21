@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DecimalCollection {
-
+  
     private List<Double> collection;
 
     public DecimalCollection() {
@@ -22,7 +22,7 @@ public class DecimalCollection {
     public double sum() {
         assert collection != null;
         if (this.collection.isEmpty()) {
-            throw new ArithmeticException("Empty collection");
+            throw new ArithmeticException();
         }
         double sum = 0;
         for (double item : this.collection) {
@@ -34,7 +34,7 @@ public class DecimalCollection {
     public double higher() {
         assert collection != null;
         if (this.collection.isEmpty()) {
-            throw new ArithmeticException("Empty collection");
+            throw new ArithmeticException();
         }
         double higher = Double.NEGATIVE_INFINITY;
         for (double item : this.collection) {
@@ -48,7 +48,7 @@ public class DecimalCollection {
     public double lower() {
         assert collection != null;
         if (this.collection.isEmpty()) {
-            throw new ArithmeticException("Empty collection");
+            throw new ArithmeticException();
         }
         double lower = Double.MAX_VALUE;
         for (double item : this.collection) {
