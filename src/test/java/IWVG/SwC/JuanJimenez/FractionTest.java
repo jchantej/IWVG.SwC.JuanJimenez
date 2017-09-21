@@ -35,6 +35,16 @@ public class FractionTest {
         fraction = new Fraction(5,10);
         assertEquals(0.5, fraction.decimal(), 10e-5);
     }
+    
+    @Test
+    public void testIsPropia() {
+        fraction = new Fraction(3,7);
+        assertEquals(true, fraction.isPropia());
+        fraction = new Fraction(9,2);
+        assertEquals(false, fraction.isPropia());
+        fraction = new Fraction(3,-7);
+        assertEquals(true, fraction.isPropia());
+    }
 
 
 }

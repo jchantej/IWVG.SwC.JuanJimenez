@@ -59,6 +59,10 @@ public class Fraction {
     public double decimal() {
         return (double) getNumerator() / denominator;
     }
+    
+    public boolean isPropia() {
+        return Math.abs(this.numerator) < Math.abs(this.denominator);
+    }
 
 
     
