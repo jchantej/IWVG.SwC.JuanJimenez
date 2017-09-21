@@ -45,6 +45,13 @@ public class FractionTest {
         fraction = new Fraction(3,-7);
         assertEquals(true, fraction.isPropia());
     }
+    
+    @Test
+    public void testSum() {
+        assertEquals(7, fraction.sum(new Fraction(1,4), new Fraction(1,3)).getNumerator());
+        assertEquals(12, fraction.sum(new Fraction(1,4), new Fraction(1,3)).getDenominator());
+    }
+
 
 
 }

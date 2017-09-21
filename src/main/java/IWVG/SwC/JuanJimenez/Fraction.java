@@ -64,6 +64,13 @@ public class Fraction {
         return Math.abs(this.numerator) < Math.abs(this.denominator);
     }
 
+    public Fraction sum(Fraction f1, Fraction f2) {
+        Fraction f3 = new Fraction();
+        f3.numerator = f1.numerator * f2.denominator + f1.denominator * f2.numerator;
+        f3.denominator = f1.denominator * f2.denominator;
+        return f3;
+    }
+
 
     
 }
