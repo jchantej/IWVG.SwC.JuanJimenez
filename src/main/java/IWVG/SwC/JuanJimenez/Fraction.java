@@ -76,7 +76,7 @@ public class Fraction {
         double num2 = fractionA.getNumerator() * (double) fractionB.getNumerator();
         double den2 = fractionA.getDenominator() * (double) fractionB.getDenominator();
 
-        return num2 / (double) den2;
+        return num2 /  (double)den2;
     }
     
 }
