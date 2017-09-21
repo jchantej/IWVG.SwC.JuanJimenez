@@ -19,7 +19,7 @@ public class FractionTest {
     @Test
     public void testFractionIntInt() {
        assertEquals(3, fraction.getNumerator());
-       assertEquals(5, fraction.getDenominator());
+       assertEquals(5, fraction.getDenominator()); 
     }
 
     @Test
