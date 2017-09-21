@@ -59,7 +59,24 @@ public class Fraction {
     public double decimal() {
         return (double) getNumerator() / denominator;
     }
+    
+    public boolean isPropia() {
+        return Math.abs(this.numerator) < Math.abs(this.denominator);
+    }
 
+    public Fraction sum(Fraction f1, Fraction f2) {
+        Fraction f3 = new Fraction();
+        f3.numerator = f1.numerator * f2.denominator + f1.denominator * f2.numerator;
+        f3.denominator = f1.denominator * f2.denominator;
+        return f3;
+    }
 
+    public double multiplicacion(Fraction fractionA, Fraction fractionB) {
+
+        double num2 = fractionA.getNumerator() * (double) fractionB.getNumerator();
+        double den2 = fractionA.getDenominator() * (double) fractionB.getDenominator();
+
+        return num2 /  (double)den2;
+    }
     
 }

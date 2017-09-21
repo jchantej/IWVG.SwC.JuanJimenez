@@ -42,4 +42,10 @@ public class Point {
         return "Point[" + x + "," + y + "]";
     }
     
+    public double distance(Point origin) {
+        int operationX = origin.getX() - this.x;
+        int operationY = origin.getY() - this.y;
+        return Math.sqrt(operationX * (double)operationX + operationY * (double)operationY);
+    }
+    
 }
